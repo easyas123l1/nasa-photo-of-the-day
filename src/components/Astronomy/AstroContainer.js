@@ -40,14 +40,13 @@ const InputField = styled.input`
 
 function AstroContainer()  {
   const [data, setData] = useState([]);
-  const [date, setDate] = useState('2019-10-09');
-  const [HD, setHD] = useState('false');
+  const [date, setDate] = useState('2019-10-10');
+  //const [HD, setHD] = useState('false');
   const [startDate, setStartDate] = useState(new Date());
 
   useEffect(() => {
     axios.get(`https://api.nasa.gov/planetary/apod?date=${date}&api_key=BcxwtY8phmGU8SoVYhotzrrcdrLnG3l8iVWJWJVn`)
     .then(result => {
-      console.log(result);
       setData(result.data);
     })
     .catch(error => {
