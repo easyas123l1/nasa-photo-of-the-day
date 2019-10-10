@@ -24,6 +24,7 @@ function AstroContainer()  {
   return (
     <div className='container'>
       <h2>Astronomy Picture of the Day</h2>
+      <AstroPicker data={data} />
       <p>please type true or false in HD for High Definiton!</p>
       <form className='form'>
         <DatePicker
@@ -51,7 +52,6 @@ function AstroContainer()  {
           console.log('this is date', date)
           }}>Submit</button>
       </form>
-      <AstroPicker data={data} />
     </div>
   )
 }
