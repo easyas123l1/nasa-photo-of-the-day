@@ -2,15 +2,13 @@ import React, {useState, useEffect} from "react";
 import AsteroidPicker from './AsteroidPicker';
 import axios from 'axios';
 
+
 function AsteroidContainer()  {
   const [data, setData] = useState([]);
-  const [startDate, setStartDate] = useState('2019-10-02');
-  const [endDate, setEndDate] = useState('2019-10-09');
 
   useEffect(() => {
     axios.get(`https://api.nasa.gov/neo/rest/v1/feed?start_date=2015-09-07&end_date=2015-09-08&api_key=BcxwtY8phmGU8SoVYhotzrrcdrLnG3l8iVWJWJVn`)
     .then(result => {
-      console.log('this is asteroid', result)
       setData(result.data);
     })
     .catch(error => {
