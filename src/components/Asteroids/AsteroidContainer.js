@@ -1,6 +1,20 @@
 import React, {useState, useEffect} from "react";
 import AsteroidPicker from './AsteroidPicker';
+import styled from 'styled-components';
 import axios from 'axios';
+
+const divContainer = styled.div`
+  background: lightblue;
+  width: 100%;
+  max-width: 850px;
+  margin: 20px auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  color: black;
+  box-shadow: 0px 1px 6px -2px grey;
+`;
 
 function AsteroidContainer()  {
   const [data, setData] = useState([]);
@@ -19,7 +33,7 @@ function AsteroidContainer()  {
   }, [])
 
   return (
-    <div className='container'>
+    <divContainer className='container'>
       <h2>Near Earth Object's</h2>
       <p>enter in start date & end date as YYYY-MM-DD</p>
       <form className='form'>
@@ -28,7 +42,7 @@ function AsteroidContainer()  {
         <button>Submit</button>
       </form>
       <AsteroidPicker data={data} />
-    </div>
+    </divContainer>
   )
 }
 
