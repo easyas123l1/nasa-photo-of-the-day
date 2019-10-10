@@ -13,6 +13,7 @@ function AstroContainer()  {
   useEffect(() => {
     axios.get(`https://api.nasa.gov/planetary/apod?date=${date}&api_key=BcxwtY8phmGU8SoVYhotzrrcdrLnG3l8iVWJWJVn`)
     .then(result => {
+      console.log(result);
       setData(result.data);
     })
     .catch(error => {
@@ -27,7 +28,7 @@ function AstroContainer()  {
       <form className='form'>
         <DatePicker
         className='inputDate'
-        todayButton="Vandaag"
+        todayButton="Today"
         selected={startDate}
         onChange={date => {
           let newday = date.getDate();
