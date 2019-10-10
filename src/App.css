@@ -11,11 +11,19 @@
   box-shadow: 0px 1px 6px -2px grey;
 }
 
+.submitBut {
+  margin: 10px;
+}
+
 .form {
   margin: 1%;
 }
 
-.input {
+.inputDate {
+  margin: 10px;
+}
+
+.inputHd {
   margin: 10px;
 }
 
