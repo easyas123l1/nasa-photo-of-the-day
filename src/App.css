@@ -19,24 +19,24 @@
   margin: 1%;
 } */
 
-.inputDate {
+/* .inputDate {
   margin: 10px;
-}
+} */
 
-.inputHd {
+/* .inputHd {
   margin: 10px;
-}
+} */
 
-.pictureOfTheDay {
+/* .pictureOfTheDay {
   width: 800px;
   height: 800px;
   object-fit: scale;
   flex-shrink: 2;
-}
+} */
 
-.App {
+/* .App {
   text-align: center;
-}
+} */
 
 .App-logo {
   animation: App-logo-spin infinite 20s linear;
@@ -45,7 +45,7 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: #282c34; 
   min-height: 100vh;
   display: flex;
   flex-direction: column;

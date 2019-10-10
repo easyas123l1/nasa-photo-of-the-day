@@ -82,7 +82,6 @@ function AstroContainer()  {
         HD
         <SubmitButton className='submitBut' onClick={(e) => {
           e.preventDefault();
-          console.log('this is date', date)
           }}>Submit</SubmitButton>
       </FormEntry>
     </DivContainer>
